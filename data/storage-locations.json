@@ -1,0 +1,74 @@
+[
+  {
+    "refinery": "ARC-L1 (Wide Forest)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "ARC-L2 (Lively Pathway)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "ARC-L4 (Faint Glen)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "CRU-L1 (Ambitious Dream)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "HUR-L1 (Green Glade)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "HUR-L2 (Faithful Dream)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "MIC-L1 (Shallow Frontier)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "MIC-L2 (Long Forest)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "MIC-L5 (Modern Icarus)",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "Levski",
+    "mainLocation": "Nyx"
+  },
+  {
+    "refinery": "Pyro Gateway",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "Nyx Gateway",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "Terra Gateway",
+    "mainLocation": "Stanton"
+  },
+  {
+    "refinery": "Ruin Station",
+    "mainLocation": "Pyro"
+  },
+  {
+    "refinery": "Checkmate Station",
+    "mainLocation": "Pyro"
+  },
+  {
+    "refinery": "Orbituary",
+    "mainLocation": "Pyro"
+  },
+  {
+    "refinery": "Nyx Gateway",
+    "mainLocation": "Pyro"
+  },
+  {
+    "refinery": "Stanton Gateway",
+    "mainLocation": "Pyro"
+  }
+]

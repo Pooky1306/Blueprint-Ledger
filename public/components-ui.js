@@ -1,0 +1,9 @@
+function componentBadge(b){const m=componentMetadata(b,componentData);return m?`<span class="component-grade component-class-${esc(m.class.toLowerCase().replace(/[^a-z0-9]+/g,'-'))}">${esc(m.class)}${m.grade?' · Grade '+esc(m.grade):''}</span>`:''}
+function componentSourceStatus(){const matches=catalogue.blueprints.filter(b=>componentMetadata(b,componentData)).length;$('componentMeta').textContent=`Component metadata: Star Citizen Wiki · ${componentData.gameVersions?.join(', ')||'version not supplied'} · ${matches} matching blueprints${componentData.syncedAt?' · synced '+new Date(componentData.syncedAt).toLocaleString():''}`}
+$('syncComponents').onclick=async()=>{$('syncComponents').disabled=true;try{componentData=validateComponents(await api('sync-components',{}));render();componentSourceStatus();$('notice').textContent='Component classes and grades updated.'}catch(e){notice('Component sync failed; previous metadata retained. '+e.message)}finally{$('syncComponents').disabled=false}};
+try{componentData=validateComponents(await api('components'))}catch{/* Bundled snapshot supports file mode and older local servers. */}
+render();componentSourceStatus();
+
+function productStatsStatus(d){$('productStatsMeta').textContent='Product stat bases: SCMDB · '+d.version+' · '+Object.keys(d.items).length+' products'}
+$('syncProductStats').onclick=async()=>{$('syncProductStats').disabled=true;try{const d=validateWeaponStats(await api('sync-product-stats',{}));setCraftWeaponStats(d);productStatsStatus(d);renderCrafting();$('notice').textContent='Product statistics updated.'}catch(e){notice('Product stats sync failed; previous data retained. '+e.message)}finally{$('syncProductStats').disabled=false}};
+try{const d=validateWeaponStats(await api('product-stats'));setCraftWeaponStats(d);productStatsStatus(d)}catch{productStatsStatus({version:'bundled LIVE snapshot',items:craftWeaponStats.items})}
