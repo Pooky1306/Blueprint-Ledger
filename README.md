@@ -4,7 +4,7 @@
 
 Made by **Pooky**.
 
-Keep track of the blueprints you own or want, record your collected resources, and plan what to craft—all in a compact, dark interface designed with touchscreen use in mind.
+Keep track of the blueprints you own or want, record your collected resources, and plan what to craft—all in a compact interface designed with touchscreen use in mind.
 
 ## Features
 
